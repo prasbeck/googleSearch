@@ -4,11 +4,13 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: darkcyan;
+    animation: animated 16s ease-in-out infinite;
+	background-size: cover;
+	background-repeat: none;
 }
 h1, form{
     text-align: center;
-    color: white;
+    color: darkblue;
 }
 nav{
     margin-top: 20px;
@@ -26,7 +28,7 @@ li{
 a{
     text-decoration: none;
     
-    color: white;
+    color: darkblue;
 }
 input{
     width: 60%;
@@ -38,6 +40,24 @@ input{
 .container{
     margin-top: 25vh;
     float: none;
+}
+@keyframes animated{
+	0%,100%{
+		background-image: url(images/bg-5.jpg);
+	}
+	20%{
+		background-image: url(images/bg-4.jpg);
+	}
+	40%{
+		background-image: url(images/bg-1.jpg);
+
+	}
+	60%{
+		background-image: url(images/bg-2.jpg);
+	}
+	80%{
+		background-image: url(images/bg-3.jpg);
+	}
 }
 
 
